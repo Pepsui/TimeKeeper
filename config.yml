@@ -1,0 +1,4 @@
+appsettings:
+  length: 720
+  width: 720
+  app-name: "Time Keeper"
