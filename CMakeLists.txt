@@ -11,6 +11,7 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
+set(CMAKE_CXX_FLAGS "-std=c++17 -Wall -Wextra -g")
 find_package(Qt5 COMPONENTS Core Widgets REQUIRED)
 find_package(yaml-cpp REQUIRED)
 

@@ -2,3 +2,6 @@ appsettings:
   length: 720
   width: 720
   app-name: "Time Keeper"
+  saved_charges_location: "../saved_charges/"
+
+Programs: ["This", "is", "a", "test"]
