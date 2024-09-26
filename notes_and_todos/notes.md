@@ -15,3 +15,5 @@ Cons of date
 - Will have to make extra logic to look for specific charge numbers, since the easy querying stuff will be by day rather than number
 
 Seems like I use my sutff in a way that makes doing things by charge number a lot better and easier for now, so will go with that method and continue on for later
+
+Note to self: Need to look into using llvm as a linker at some point and figure out how that works (probably easy enough, but still needs to be looked at and done at some point)

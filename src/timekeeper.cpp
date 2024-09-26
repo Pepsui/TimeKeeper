@@ -2,6 +2,8 @@
 #include <QHBoxLayout>
 #include <QTextStream>
 
+namespace fs = std::filesystem;
+
 void current_time_holder::load_holder_from_yaml(std::string &filename)
 {
 	// Not implemented yet, but putting logic to get rid of warning
@@ -130,8 +132,8 @@ void TimeKeeper::calculate_time_left_in_week() {
 
 void TimeKeeper::save_charge_number_and_times_assoc()
 {
-	if (!std::filesystem::is_directory(saved_charges_location))
-		std::filesystem::create_directory(saved_charges_location);
+	if (!fs::is_directory(saved_charges_location))
+		fs::create_directory(saved_charges_location);
 	current_charged_time_holder.program_name = Programs->currentText().toStdString();
 	current_charged_time_holder.effort_name = effort_name->text().toStdString();
 	current_charged_time_holder.current_charge_number = charge_number->text();

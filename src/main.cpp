@@ -10,7 +10,7 @@ int main(int argc, char *argv[]) {
     app_defaults defaults;
 
     try {
-        YAML::Node config = YAML::LoadFile("../config.yml");
+        YAML::Node config = YAML::LoadFile("../config/config.yml");
 
         defaults.window_length = config["appsettings"]["length"].as<int>();
         defaults.window_width = config["appsettings"]["width"].as<int>();
